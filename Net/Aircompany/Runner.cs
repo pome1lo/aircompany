@@ -28,12 +28,8 @@ namespace Aircompany
             Airport airport = new Airport(planes);
             Airport militaryAirport = new Airport(airport.GetMilitaryPlanes());
             Airport passengerAirport = new Airport(airport.GetPassengersPlanes());
-            Console.WriteLine(militaryAirport
-                              .SortByMaxDistance()
-                              .ToString());
-            Console.WriteLine(passengerAirport
-                              .SortByMaxSpeed()
-                              .ToString());
+            Console.WriteLine(militaryAirport.SortByMaxDistance().ToString());
+            Console.WriteLine(passengerAirport.SortByMaxSpeed().ToString());
             Console.WriteLine(passengerAirport.GetPassengerPlaneWithMaxPassengersCapacity());           
         }
     }
